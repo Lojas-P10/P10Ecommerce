@@ -1,0 +1,52 @@
+nav {
+  background-color: #f8f8f8;
+  height: 10vh;
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.title {
+  color: red;
+}
+.logo {
+  height: fit-content;
+  width: 10em;
+}
+
+.buttonsContent {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+button {
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+
+
+.accountButton {
+  background-color: #6344c3;
+  color: white;
+}
+
+.dropdown {
+  background-color: #6344c3;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 20px;
+  height: 20vh;
+  opacity: 0;
+  transition: .2s;
+  width: 20em;
+  padding: 10px;
+}
+nav span {
+  padding: 33%;
+
+}
