@@ -1,5 +1,5 @@
 nav {
-  background-color: #f8f8f8;
+  background-color: #fff;
   height: 10vh;
   padding: 0 2em;
   display: flex;
@@ -7,9 +7,11 @@ nav {
   align-items: center;
   overflow: hidden;
 }
+
 .title {
   color: red;
 }
+
 .logo {
   height: fit-content;
   width: 10em;
@@ -36,17 +38,92 @@ button {
 }
 
 .dropdown {
-  background-color: #6344c3;
+  background-color: #ffffff;
   border-radius: 10px;
   position: absolute;
+  box-shadow: aliceblue;
   margin-top: 20px;
-  height: 20vh;
   opacity: 0;
   transition: .2s;
-  width: 20em;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  left: 31%;
+  width: 35em;
+  box-shadow:  2px 2px 20px rgba(0, 0, 0, 0.062);
+  padding: 2em 3em;
 }
-nav span {
+
+.cow {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+
+.linha {
+  background-color: #d4d4d4;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 10px;
+}
+
+.surpresas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.surpresas span{
+  padding: 1em
+}
+.titleDropdown {
+  margin-bottom: .5em;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.categoriasContent {
+  display: flex;
+  gap: .7em;
+  flex-direction: column;
+
+}
+.dropdown a:hover {
+  cursor: pointer;
+  
+}
+.option svg {
+  opacity: 0;
+}
+.option:hover a + svg {
+  opacity: 1;
+  transition: .1s;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: .5em
+}
+
+.dropdown:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: #fff;
+  left: 50%;
+  top: 1%;
+  transform: translatey(-50%) rotate(45deg);
+  border-radius: 3px;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .desc {
   padding: 33%;
 
 }

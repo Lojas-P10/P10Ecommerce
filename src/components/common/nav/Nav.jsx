@@ -1,8 +1,7 @@
+import Dropdown from "./dropdown";
 import styles from "./nav.module.css";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import { openDropdown, closeDropdown } from "../../../redux/dropdown/action";
-const Nav = ({ openDropdown, isOpen, closeDropdown }) => {
+
+const Nav = () => {
   return (
     <nav>
       <img
@@ -11,19 +10,7 @@ const Nav = ({ openDropdown, isOpen, closeDropdown }) => {
         className={styles.logo}
       />
       <div>
-        <div>
-          <div onMouseLeave={closeDropdown} onMouseEnter={openDropdown}>
-            <span >
-              Produtos
-            </span>
-            <div
-              className={styles.dropdown}
-              style={{ opacity: isOpen ? "1" : "0" }}
-            >
-              <div>hahahaha</div>
-            </div>
-          </div>
-        </div>
+        <Dropdown />
       </div>
       <div className={styles.buttonsContent}>
         <button>Carrinho</button>
@@ -33,18 +20,5 @@ const Nav = ({ openDropdown, isOpen, closeDropdown }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  isOpen: state.dropdown.isOpen,
-});
 
-const mapDispatchToProps = {
-  openDropdown,
-  closeDropdown,
-};
-Nav.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  openDropdown: PropTypes.func.isRequired,
-  closeDropdown: PropTypes.func.isRequired,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Nav);
+export default Nav

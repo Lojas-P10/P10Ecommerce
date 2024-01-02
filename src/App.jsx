@@ -1,4 +1,4 @@
-import { useState } from "react";
+import 'boxicons'
 import "./App.css";
 import Home from "./pages/Home";
 import Nav from "./components/common/nav/Nav";
