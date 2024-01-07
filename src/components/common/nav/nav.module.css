@@ -9,11 +9,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  z-index: 2;
 }
 
-.title {
-  color: red;
-}
 
 .logo {
   height: fit-content;
@@ -43,16 +41,16 @@ button {
 .dropdown {
   background-color: #ffffff;
   border-radius: 10px;
-  position: absolute;
+  position: fixed;
   box-shadow: aliceblue;
   margin-top: 20px;
   opacity: 0;
   transition: .2s;
   display: flex;
   flex-direction: column;
-  left: 31%;
+  right: 28%;
   width: 35em;
-  box-shadow:  2px 2px 20px rgba(0, 0, 0, 0.062);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
   padding: 2em 3em;
 }
 
