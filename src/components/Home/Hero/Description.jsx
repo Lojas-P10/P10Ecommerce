@@ -1,5 +1,5 @@
 import Card from "./Card"
-import styles from "./home.module.css"
+import styles from "./hero.module.css"
 
 export default function Description() {
     const produtos = [{

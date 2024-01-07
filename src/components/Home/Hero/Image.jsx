@@ -1,4 +1,5 @@
-import styles from "./home.module.css"
+import styles from "./hero.module.css"
+
 export default function Image() {
     return (
         <div className={styles.column}>
