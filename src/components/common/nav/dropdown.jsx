@@ -107,8 +107,7 @@ const Dropdown = ({ openDropdown, isOpen, closeDropdown }) => {
           </div>
         </div>
         <div className={styles.surpresas}>
-          <div className={styles.linha}></div>
-          <span> Veja surpresas!</span>
+          <button> Veja surpresas!</button>
         </div>
       </div>
     </div>
