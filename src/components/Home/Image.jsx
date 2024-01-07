@@ -5,7 +5,6 @@ export default function Image() {
             <div className={styles.curveBackground}></div>
             <img className={styles.foodImage} src="../../../public/produto.png"
                 alt="Delicious Food Image" id="foodImage" />
-            
         </div>
     )
 }

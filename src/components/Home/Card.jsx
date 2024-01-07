@@ -1,18 +1,16 @@
 import styles from "./home.module.css"
+import { ReactPropTypes } from "react"
 
-export default function Card() {
+
+export default function Card({preco, titulo, unidades, imagem}) {
     return (
-        <div className={styles.infoContainer}>
-            <div className={styles.rating}>
-                <i className={styles.fasFaStar}></i>
-                <span>4.5</span>
-            </div>
+        <div className={styles.infoContainer}>  
             <div className={styles.itemsInfo}>
-                <img src="https://foodbreakbhd.pk/img/hero.png" alt="Item 1" />
-                <span className={styles.dealName}>Deal 1</span>
+                <img src={imagem} alt="Item 1" />
+                <span className={styles.dealName}>R$ {preco}</span>
             </div>
-            <p>Biryani, Burger, Broast</p>
-            <span>2000 PKR</span>
+            <p>{titulo}</p>
+            <span>Restam {unidades} unidades</span>
         </div>
     )
 }
