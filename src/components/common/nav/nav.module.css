@@ -6,12 +6,17 @@ nav {
   position: fixed;
   padding: 0 2em;
   display: flex;
+  transition: background-color 0.3s ease;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
   z-index: 2;
 }
 
+nav.scrolled {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+  background-color: white;
+}
 
 .logo {
   height: fit-content;
