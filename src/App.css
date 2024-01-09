@@ -8,8 +8,79 @@
   padding: 0;
 }
 
-:root{
-  --primary-color:#26fe99;
-  --secondary-color:#6344c3;
+:root {
+  --primary-color: #26fe99;
+  --secondary-color: #6344c3;
 }
 
+.card {
+  max-width: 260px;
+  min-width: 260px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+  background-color: #fbfbfb;
+  padding: 16px;
+}
+
+.card .image {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/41x9uMD-spL._AC_SX184_.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  border-radius: 8px;
+  margin-bottom: .5em;
+}
+
+.starPrice {
+  display: flex;
+  justify-content: space-between;
+  width: 100%
+}
+
+.starPrice span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.titleMarca {
+  display: flex;
+  margin: .5em 0;
+  flex-direction: column;
+}
+
+.titleMarca span:nth-child(1) {
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.titleMarca span:nth-child(2) {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.addCart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addCart select {
+  width: 3vw;
+  padding: 0 1vw;
+}
+
+
+.all-products {
+  gap: 1vw;
+  padding: 1vw;
+  display: flex;
+  min-width: 80vw;
+  overflow-x: scroll;
+}
