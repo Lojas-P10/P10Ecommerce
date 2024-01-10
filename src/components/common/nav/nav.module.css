@@ -1,7 +1,7 @@
 nav {
   background-color: transparent;
   height: 10vh;
-  width: web-fill-available;
+  width: -webkit-fill-available;
   width: -moz-available;
   position: fixed;
   padding: 0 2em;

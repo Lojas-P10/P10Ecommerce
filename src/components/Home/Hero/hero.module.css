@@ -1,9 +1,9 @@
 .container {
-    max-width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    overflow-x: hidden;
+    HEIGHT: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
@@ -12,31 +12,7 @@
     margin-top: 4em
 }
 
-.column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 2em;
-    position: relative;
-    overflow: hidden;
-}
 
-.column:nth-child(1) {
-    margin-top: 10%;
-}
-
-.curveBackground {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #272727;
-    clip-path: polygon(20% 0, 100% 0, 100% 100%, 40% 50%);
-    z-index: -1;
-}
 
 h1 {
     color: var(--primary-color);
@@ -46,6 +22,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: #333;
+    width: 70%;
     font-weight: bold;
 }
 
@@ -160,7 +137,6 @@ h1 {
 }
 
 .foodImage {
-    width: 80%;
     height: auto;
     max-width: 100%;
     object-fit: cover;

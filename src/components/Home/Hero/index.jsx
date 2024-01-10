@@ -6,8 +6,12 @@ export default function Hero() {
     return (
         <main>
             <div className={styles.container}>
-                <Description />
+                <div>
+                    
+                    
+                </div>
                 <Image />
+                <Description />
             </div>
         </main>
     )

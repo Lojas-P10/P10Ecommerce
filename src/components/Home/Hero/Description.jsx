@@ -19,7 +19,7 @@ export default function Description() {
     return (
         <div className={styles.column}>
             <h1>Onde tudo custa R$10</h1>
-            <p className={styles.heroText}>Essa é a sua oportunidade de fazer <span className={styles.highlight}> compras incríveis.</span></p>
+            <h2 className={styles.heroText}>Essa é a sua oportunidade de fazer <span className={styles.highlight}> compras incríveis.</span></h2>
             <p className={styles.heroParagraph}>O que está na sua lista de compras hoje?</p>
             <button className={styles.orderButton}>Encontrar mais produtos</button>
             <div className={styles.row}>
