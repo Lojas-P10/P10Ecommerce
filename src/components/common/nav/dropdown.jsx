@@ -57,9 +57,13 @@ const Dropdown = ({ openDropdown, isOpen, closeDropdown }) => {
   ];
   return (
     <div>
-      <span className="product" onMouseEnter={openDropdown}>
+      <div onMouseEnter={openDropdown}>
+      <span className={styles.title} >
         Produtos
+
       </span>
+      <img src="../../../../public/icon/set.svg" alt=""  className={styles.set} />
+      </div>
       <div
         className={styles.dropdown}
         onMouseLeave={closeDropdown}

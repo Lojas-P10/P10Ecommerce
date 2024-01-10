@@ -22,9 +22,11 @@ nav.scrolled {
   height: fit-content;
   width: 10em;
 }
-nav span {
+
+nav .title {
   cursor: pointer;
 }
+
 .buttonsContent {
   display: flex;
   flex-direction: row;
@@ -37,8 +39,6 @@ button {
   border-radius: 0.5em;
   cursor: pointer;
 }
-
-
 
 .accountButton {
   background-color: #6344c3;
@@ -55,12 +55,14 @@ button {
   transition: .2s;
   display: flex;
   flex-direction: column;
-  right: 28%;
+  right: 39%;
   width: 35em;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
   padding: 2em 3em;
 }
-
+.set {
+  margin-left: 1vw;
+}
 .cow {
   justify-content: space-between;
   display: flex;
@@ -126,4 +128,51 @@ button {
 nav .desc {
   padding: 33%;
 
+}
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 20vw;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(145, 248, 131, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(183, 234, 183, 0.1);
+}
+
+.contentRight {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
 }
