@@ -9,10 +9,19 @@
 .row {
     display: flex;
     gap: 1em;
-    margin-top: 4em
+    margin-top: 4em;
+    align-items: center;
+    justify-content: center
 }
 
-
+.arrows {
+    display: flex;
+    width: -webkit-fill-available;
+    position: absolute;
+    top: 50%;
+    padding: 0vh 1vw;
+    justify-content: space-between;
+}
 
 h1 {
     color: var(--primary-color);
